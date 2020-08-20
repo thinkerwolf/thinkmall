@@ -11,7 +11,7 @@
         <module>thinkmall-eureka</module>
         <module>thinkmall-sso</module>
         <module>thinkmall-common</module>
-        <module>thinkmall-web-sso</module>
+        <module>thinkmall-order</module>
     </modules>
 
     <packaging>pom</packaging>

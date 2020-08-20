@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: thinkmall-sso-web
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 30
+    service-url:
+      defaultZone: http://localhost:8501/eureka

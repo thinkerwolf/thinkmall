@@ -1,12 +1,17 @@
+spring:
+  application:
+    name: thinkmall-eureka
 
 server:
   port: 8501
 
+
+# Eureka实例选择有两种概念Region和Zone
 eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true  # 自身注册到eureka
+    fetch-registry: false       # 可以获取到eureka已注册服务
     service-url:
-      defaultZone: http://${eureka.instance.hostname:localhost}:${server.port:8501}/eureka
+      defaultZone: http://${eureka.instance.hostname:localhost}:${server.port}/eureka

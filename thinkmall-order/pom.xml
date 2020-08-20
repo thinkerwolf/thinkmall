@@ -9,13 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>thinkmall-sso</artifactId>
-    <description>登录模块</description>
+    <artifactId>thinkmall-order</artifactId>
+    <description>订单模块</description>
     <packaging>pom</packaging>
     <modules>
-        <module>thinkmall-sso-api</module>
-        <module>thinkmall-sso-service</module>
-        <module>thinkmall-sso-web</module>
+        <module>thinkmall-order-api</module>
     </modules>
-
+    <dependencies></dependencies>
 </project>
