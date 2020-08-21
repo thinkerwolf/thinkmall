@@ -3,7 +3,7 @@ spring:
     name: thinkmall-eureka
 
 server:
-  port: 8501
+  port: 7770
 
 
 # Eureka实例选择有两种概念Region和Zone

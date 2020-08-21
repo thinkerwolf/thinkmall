@@ -4,15 +4,11 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients
 @EnableDiscoveryClient
-public class WebSsoApplication {
-
+public class SsoServiceApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(WebSsoApplication.class).web(WebApplicationType.REACTIVE).run(args);
+        new SpringApplicationBuilder(SsoServiceApplication.class).web(WebApplicationType.REACTIVE).run(args);
     }
-
 }

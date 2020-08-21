@@ -9,18 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>thinkmall-order-api</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>thinkmall-order-web</artifactId>
+
     <dependencies>
         <dependency>
-            <groupId>com.thinkerwolf</groupId>
-            <artifactId>thinkmall-common</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
     </dependencies>
-
 </project>
