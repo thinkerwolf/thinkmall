@@ -1,14 +1,13 @@
 spring:
   application:
     name: thinkmall-sso-web
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
 
 server:
   port: 8081
-
-thinkmall-sso:
-  ribbon:
-    NFLoadBalancerPingClassName: com.netflix.loadbalancer.PingUrl
-
 
 eureka:
   client:
@@ -16,4 +15,4 @@ eureka:
     fetch-registry: true
     registry-fetch-interval-seconds: 30
     service-url:
-      defaultZone: http://localhost:8501/eureka
+      defaultZone: http://localhost:7770/eureka
