@@ -14,6 +14,8 @@
         <module>thinkmall-sso</module>
         <module>thinkmall-common</module>
         <module>thinkmall-order</module>
+        <module>thinkmall-dashboard</module>
+        <module>thinkmall-turbine</module>
     </modules>
 
     <parent>

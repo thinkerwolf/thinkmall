@@ -7,7 +7,7 @@ spring:
         enabled: true
 
 server:
-  port: 8081
+  port: 8001
 
 eureka:
   client:
@@ -15,4 +15,4 @@ eureka:
     fetch-registry: true
     registry-fetch-interval-seconds: 30
     service-url:
-      defaultZone: http://localhost:7770/eureka
+      defaultZone: http://localhost:7001/eureka

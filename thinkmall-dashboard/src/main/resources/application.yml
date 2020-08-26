@@ -1,13 +1,9 @@
 spring:
   application:
-    name: thinkmall-sso-web
-  cloud:
-    loadbalancer:
-      retry:
-        enabled: true
+    name: thinkmall-dashboard
 
 server:
-  port: 8001
+  port: 2001
 
 eureka:
   client:

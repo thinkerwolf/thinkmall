@@ -1,13 +1,13 @@
 spring:
   application:
-    name: thinkmall-sso-web
-  cloud:
-    loadbalancer:
-      retry:
-        enabled: true
+    name: thinkmall-trubine
 
 server:
-  port: 8001
+  port: 3001
+
+turbine:
+  app-config: THINKMALL-SSO-WEB
+  combine-host-port: true
 
 eureka:
   client:
