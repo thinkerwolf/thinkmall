@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: thinkmall-gateway
+
+server:
+  port: 5555
+
+zuul:
+  retryable: false
+  add-host-header: true
+  routes:
+    user:
+      path: /thinkmall-sso-web/**
+      serviceId: thinkmall-sso-web
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka

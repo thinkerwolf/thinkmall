@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-@FeignClient(name = "sso-service-user")
+@FeignClient(name = "thinkmall-sso-service")
 public interface IUserService {
 
     @RequestMapping(value = "/user/login")
