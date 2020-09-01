@@ -17,6 +17,7 @@
         <module>thinkmall-dashboard</module>
         <module>thinkmall-turbine</module>
         <module>thinkmall-gateway</module>
+        <module>thinkmall-config</module>
     </modules>
 
     <parent>

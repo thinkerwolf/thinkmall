@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: thinkmall-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/thinkerwolf/thinkmall/
+          username: thinkerwolf
+          password: Wk1234lc
+          search-paths:
+            - config
+server:
+  port: 6001
