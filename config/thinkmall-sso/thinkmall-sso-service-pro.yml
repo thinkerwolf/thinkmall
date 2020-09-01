@@ -1,15 +1,1 @@
-server:
-  port: 8601
-
-spring:
-  application:
-    name: thinkmall-sso-service
-
-eureka:
-  instance:
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 90
-  client:
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:7001/eureka
+from: git-pro-1.0
