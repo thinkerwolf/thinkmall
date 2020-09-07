@@ -3,6 +3,7 @@ package com.thinkerwolf.thinkmall.sso.service;
 import com.thinkerwolf.thinkmall.common.OpResult;
 import com.thinkerwolf.thinkmall.sso.IHelloService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@RefreshScope
 @RestController
 public class HelloServiceImpl implements IHelloService {
 

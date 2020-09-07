@@ -17,10 +17,10 @@ spring:
 #          search-paths:
 #            - config
 
-  security:
-    user:
-      name: wk
-      password: 37cc5635-559b-4e6f-b633-7e932b813f73
+#  security:
+#    user:
+#      name: wk
+#      password: 37cc5635-559b-4e6f-b633-7e932b813f73
 
 eureka:
   instance:
