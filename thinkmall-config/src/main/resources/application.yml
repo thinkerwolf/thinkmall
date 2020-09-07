@@ -33,3 +33,10 @@ eureka:
 
 server:
   port: 4001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
