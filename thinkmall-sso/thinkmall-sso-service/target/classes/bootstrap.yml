@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: thinkmall-sso-service
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: thinkmall-config
+      username: wk
+      password: 37cc5635-559b-4e6f-b633-7e932b813f73
 
 eureka:
   instance:

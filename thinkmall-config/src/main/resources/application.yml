@@ -1,14 +1,35 @@
 spring:
   application:
     name: thinkmall-config
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/thinkerwolf/thinkmall/
-          username: thinkerwolf
-          password: Wk1234lc
-          search-paths:
-            - config
+        bootstrap: true
+        native:
+          search-locations:
+            - file:/c:/Users/wukai/IdeaProjects/thinkmall/config
+#        git:
+#          uri: https://github.com/thinkerwolf/thinkmall/
+#          username: thinkerwolf
+#          password: Wk1234lc
+#          search-paths:
+#            - config
+
+  security:
+    user:
+      name: wk
+      password: 37cc5635-559b-4e6f-b633-7e932b813f73
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
 server:
-  port: 6001
+  port: 4001
