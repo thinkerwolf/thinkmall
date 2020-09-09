@@ -13,6 +13,8 @@ spring:
       username: wk
       password: 37cc5635-559b-4e6f-b633-7e932b813f73
 
+
+
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 30
