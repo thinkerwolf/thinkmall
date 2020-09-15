@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @FeignClient(name = "sso-service-hello")
-public interface IHelloService {
+public interface IHelloClient {
 
     @RequestMapping(value = "/hello")
     OpResult hello(@RequestParam(value = "name", required = false) String name);

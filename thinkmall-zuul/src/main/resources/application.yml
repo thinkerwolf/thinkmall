@@ -5,16 +5,23 @@ spring:
 server:
   port: 5555
 
+# zuul路由配置
 zuul:
-  retryable: false
+  retryable: true
   add-host-header: true
   routes:
     user:
       path: /thinkmall-sso-web/**
       serviceId: thinkmall-sso-web
 
-
 eureka:
   client:
+    register-with-eureka: true
     service-url:
       defaultZone: http://localhost:7001/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,4 +1,4 @@
-package com.thinkerwolf.thinkmall.gateway.filter;
+package com.thinkerwolf.thinkmall.zuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

@@ -13,7 +13,13 @@ spring:
       username: wk
       password: 37cc5635-559b-4e6f-b633-7e932b813f73
 
-
+    stream:
+      bindings:
+        input:
+          group: consumer-A
+          destination: greetings
+        output:
+          destination: greetings
 
 eureka:
   instance:

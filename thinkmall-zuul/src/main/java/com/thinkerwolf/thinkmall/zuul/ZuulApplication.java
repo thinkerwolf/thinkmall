@@ -1,4 +1,4 @@
-package com.thinkerwolf.thinkmall.gateway;
+package com.thinkerwolf.thinkmall.zuul;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -7,8 +7,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @EnableZuulProxy
 @SpringCloudApplication
-public class GatewayApplication {
+public class ZuulApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(GatewayApplication.class).web(WebApplicationType.SERVLET).run(args);
+        new SpringApplicationBuilder(ZuulApplication.class).web(WebApplicationType.SERVLET).run(args);
     }
 }

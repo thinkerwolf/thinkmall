@@ -1,7 +1,7 @@
-package com.thinkerwolf.thinkmall.sso.service;
+package com.thinkerwolf.thinkmall.sso.client;
 
 import com.thinkerwolf.thinkmall.common.OpResult;
-import com.thinkerwolf.thinkmall.sso.IHelloService;
+import com.thinkerwolf.thinkmall.sso.IHelloClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.util.StringUtils;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RefreshScope
 @RestController
-public class HelloServiceImpl implements IHelloService {
+public class HelloClientImpl implements IHelloClient {
 
     @Value("${from:xxxx}")
     private String from;

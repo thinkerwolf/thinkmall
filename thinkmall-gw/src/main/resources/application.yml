@@ -1,0 +1,43 @@
+server:
+  port: 6555
+
+# Spring Cloud Gateway断言工厂
+# Path断言 Query路由断言 Method断言 Header路由断言
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+        - id: c-bian-cheng
+          uri: http://c.biancheng.net
+          predicates:
+            - Path=/spring_cloud/**
+          filters:
+            - AddRequestHeader=X-Request-Foo,bar
+            - RedirectTo=302, http://baidu.com
+
+        - id: thinkmall-sso-web
+          uri: lb://thinkmall-sso-web  # lb代表从注册中心获取
+          predicates:
+            - Path=/thinkmall-sso-web/**
+
+        - id: baidu
+          uri: https://www.baidu.com
+          predicates:
+            - Query=foo,ba*
+
+#        - id: bilibili
+#          uri: https://www.bilibili.com
+#          predicates:
+#            - name: CheckAuth
+#              args:
+#                name: wukai
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka

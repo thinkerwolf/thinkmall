@@ -1,7 +1,7 @@
 package com.thinkerwolf.thinkmall.sso.controller;
 
 import com.thinkerwolf.thinkmall.common.OpResult;
-import com.thinkerwolf.thinkmall.sso.IUserService;
+import com.thinkerwolf.thinkmall.sso.IUserClient;
 import com.thinkerwolf.thinkmall.sso.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserController {
 
     @Autowired
-    private IUserService userService;
+    private IUserClient userService;
 
     @RequestMapping(value = "/user/login")
     @ResponseBody

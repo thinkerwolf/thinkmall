@@ -8,6 +8,10 @@ server:
 turbine:
   app-config: THINKMALL-SSO-WEB
   combine-host-port: true
+  aggregator:
+    cluster-config:
+      - default
+
 
 eureka:
   client:
